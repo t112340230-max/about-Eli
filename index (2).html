@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吳東洋 | Dong-Yang Wu - 個人網站</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+        body { 
+            font-family: 'Noto Sans TC', sans-serif; 
+            background-color: #0f172a; /* Slate 900 */
+            color: #f8fafc; /* Slate 50 */
+        }
+        .glass-panel { 
+            background: rgba(30, 41, 59, 0.7); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+        }
+        .accent-text { color: #10b981; /* Emerald 500 */ }
+        .bg-accent { background-color: #10b981; }
+        .hover-bg-accent:hover { background-color: #059669; /* Emerald 600 */ }
+    </style>
+</head>
+<body class="antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="text-xl font-bold tracking-wider">吳東洋 <span class="accent-text">.</span></a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="hover:text-emerald-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">關於我</a>
+                        <a href="#projects" class="hover:text-emerald-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">專案與經歷</a>
+                        <a href="#skills" class="hover:text-emerald-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">專業技能</a>
+                        <a href="#contact" class="hover:text-emerald-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">聯絡方式</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 max-w-6xl mx-auto">
+        <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="text-left md:w-1/2">
+                <p class="text-emerald-400 font-medium mb-4 tracking-widest uppercase">NTUT Civil Engineering</p>
+                <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+                    穿梭於工地與岩壁之間，<br/>
+                    用<span class="accent-text">結構邏輯</span>解構山林與人生。
+                </h1>
+                <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+                    你好，我是吳東洋。國立臺北科技大學土木系學生、登山社社長及岩場負責人。喜歡把複雜的事物拆解到最根本的邏輯——無論是計算結構受力，還是判斷一條攀登路線的走向。
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-accent hover-bg-accent text-white px-8 py-3 rounded-full font-medium transition-all shadow-lg shadow-emerald-500/30">查看專案</a>
+                    <a href="#contact" class="glass-panel hover:bg-slate-800 px-8 py-3 rounded-full font-medium transition-all">聯絡我</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="image_e5c43f.jpg" alt="高山背景" class="rounded-3xl shadow-2xl shadow-emerald-500/20 object-cover w-full h-[400px] md:h-[500px]">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="w-8 h-1 bg-accent mr-4"></span>關於我
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 text-slate-300 leading-loose">
+                <div>
+                    <!-- 左側照片：雪山登頂照 -->
+                    <img src="image_e5c3e9.jpg" alt="雪山登頂" class="rounded-2xl mb-6 w-full h-64 object-cover object-center shadow-lg border border-slate-700">
+                    <p class="mb-6">
+                        我是一名21歲的大學生。高中前兩年或許有些懵懂，直到高二升高三的暑假，才真正體會到學習的價值與力量。雖然起步比別人晚，但我靠著按部就班的自學與堅持，順利在應屆考取了北科大土木工程系，這段經歷也讓我更加珍惜得來不易的學習機會。
+                    </p>
+                    <p class="mb-6">
+                        進入大學後，我逐步確立了自己的發展方向。現階段正踏實地朝著考取<strong class="text-white">台大土木所結構組</strong>的目標努力，並期望未來能取得<strong class="text-white">土木技師</strong>與<strong class="text-white">結構技師</strong>雙證照。此外，我也計畫修習法律學分，將挑戰律師資格視為長遠目標，期許自己未來能成為兼具工程與法律思維的跨領域人才。
+                    </p>
+                </div>
+                <div>
+                    <!-- 右側照片：登山社合照 -->
+                    <img src="image_e5c402.jpg" alt="北科大登山社合照" class="rounded-2xl mb-6 w-full h-64 object-cover object-center shadow-lg border border-slate-700">
+                    <p class="mb-6">
+                        在課外，我致力於成為一名自主且自由的登山者。我曾擔任北科大東宿舍男宿總幹事、登山社社長以及岩場負責人。
+                    </p>
+                    <p>
+                        我不僅攀登過台灣多座百岳，也熱愛技術性攀登，包含<strong class="text-white">傳統攀岩 (Trad Climbing)</strong> 與 <strong class="text-white">乾攀 (Drytooling)</strong>，並曾赴日本進行專業的<strong class="text-white">雪地攀登訓練</strong>。山林不僅鍛鍊了我的體能，更淬鍊了我面對困難時的意志與判斷力。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="w-8 h-1 bg-accent mr-4"></span>專案與經歷
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Project 1：GAS自動化 -->
+                <div class="glass-panel p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="image_f02a04.jpg" alt="自動化工具程式碼" class="rounded-xl mb-5 w-full h-48 object-cover border border-slate-700">
+                    <h3 class="text-xl font-bold text-white mb-3">實習資料自動化工具</h3>
+                    <p class="text-slate-400 text-sm mb-4 flex-grow">實習期間，觀察到資料處理的痛點，自主利用 Google Apps Script (GAS) 開發自動化工具，直接萃取並處理 PDF 資料，大幅縮短原本需要人工謄打的時間與錯誤率。</p>
+                </div>
+
+                <!-- Project 2：TopoRisk Logo -->
+                <div class="glass-panel p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="image_f029e9.jpg" alt="TopoRisk Logo" class="rounded-xl mb-5 w-full h-48 object-contain bg-white">
+                    <h3 class="text-xl font-bold text-white mb-3">登山體能線上評估系統</h3>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">結合自身對登山的了解與網站架設技能，獨立撰寫的一個線上評估網站，幫助山友量化並評估自身的體能狀況，提升戶外安全。</p>
+                    <a href="https://t112340230-max.github.io/hiking-calculator/" target="_blank" class="text-emerald-400 font-medium hover:text-emerald-300 flex items-center">前往網站 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-panel p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="image_e5c407.jpg" alt="攀冰訓練" class="rounded-xl mb-5 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold text-white mb-3">海內外高山與技術攀登</h3>
+                    <p class="text-slate-400 text-sm mb-4 flex-grow">完成南二段、聖稜線、單攻志雪等艱難百岳路線。前往日本八岳完成進階雪地攀登訓練。同時深耕傳統攀岩與乾攀技術，不斷突破自我極限。</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="w-8 h-1 bg-accent mr-4"></span>專業技能
+            </h2>
+            <div class="grid md:grid-cols-3 gap-12 items-center">
+                <div class="md:col-span-2 grid sm:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-medium text-white mb-6 border-l-4 border-emerald-500 pl-3">工程與資訊能力</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-slate-800 text-emerald-300 px-4 py-2 rounded-lg text-sm font-medium border border-slate-700">材料力學</span>
+                            <span class="bg-slate-800 text-emerald-300 px-4 py-2 rounded-lg text-sm font-medium border border-slate-700">結構學</span>
+                            <span class="bg-slate-800 text-emerald-300 px-4 py-2 rounded-lg text-sm font-medium border border-slate-700">Google Apps Script</span>
+                            <span class="bg-slate-800 text-emerald-300 px-4 py-2 rounded-lg text-sm font-medium border border-slate-700">Excel 自動化</span>
+                            <span class="bg-slate-800 text-emerald-300 px-4 py-2 rounded-lg text-sm font-medium border border-slate-700">網站架設</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-medium text-white mb-6 border-l-4 border-emerald-500 pl-3">戶外極限運動</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-slate-800 text-emerald-300 px-4 py-2 rounded-lg text-sm font-medium border border-slate-700">戶外登山 / 百岳</span>
+                            <span class="bg-slate-800 text-emerald-300 px-4 py-2 rounded-lg text-sm font-medium border border-slate-700">傳統攀岩 (Trad)</span>
+                            <span class="bg-slate-800 text-emerald-300 px-4 py-2 rounded-lg text-sm font-medium border border-slate-700">乾攀 (Drytooling)</span>
+                            <span class="bg-slate-800 text-emerald-300 px-4 py-2 rounded-lg text-sm font-medium border border-slate-700">雪地攀登</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-1">
+                    <img src="image_e5c420.jpg" alt="室內乾攀訓練" class="rounded-2xl shadow-xl w-full h-auto border border-slate-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 pb-32">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">準備好交流了嗎？</h2>
+            <p class="text-slate-400 mb-10 max-w-2xl mx-auto">
+                無論是學術討論、技術交流、登山邀約，或是任何有趣的專案合作，都歡迎隨時與我聯繫！
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="mailto:ya0908993337@gmail.com" class="flex items-center gap-3 bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-200 transition-colors w-full sm:w-auto justify-center">
+                    <i class="fa-solid fa-envelope text-xl"></i> ya0908993337@gmail.com
+                </a>
+                <a href="https://www.instagram.com/w_d_y_2005/" target="_blank" class="flex items-center gap-3 glass-panel hover:bg-slate-800 px-8 py-4 rounded-full font-bold transition-colors w-full sm:w-auto justify-center">
+                    <i class="fa-brands fa-instagram text-xl text-pink-500"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Dong-Yang Wu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
