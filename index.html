@@ -31,11 +31,15 @@
             <div class="flex items-center justify-between h-16">
                 <a href="#" class="text-xl font-bold tracking-wider">吳東洋 <span class="accent-text">.</span></a>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
+                    <div class="ml-10 flex items-baseline space-x-6">
                         <a href="#about" class="hover:text-emerald-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">關於我</a>
                         <a href="#projects" class="hover:text-emerald-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">專案與經歷</a>
                         <a href="#skills" class="hover:text-emerald-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">專業技能</a>
                         <a href="#contact" class="hover:text-emerald-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">聯絡方式</a>
+                        <!-- 新增：家教網站外連按鈕 -->
+                        <a href="https://t112340230-max.github.io/education/" target="_blank" class="text-emerald-400 hover:text-emerald-300 transition-colors px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20">
+                            教學與家教 <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -93,6 +97,31 @@
                     </p>
                 </div>
             </div>
+
+            <!-- 新增：家教與教學計畫捷徑 Banner -->
+            <div class="mt-16 glass-panel p-8 md:p-10 rounded-3xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 border border-emerald-500/40">
+                <!-- 裝飾用背景發光 -->
+                <div class="absolute -right-10 -bottom-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="relative z-10 md:w-2/3 text-left">
+                    <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 mb-4 border border-emerald-500/20">
+                        NEW INITIATIVE
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4 flex items-center gap-3">
+                        <i class="fa-solid fa-hand-holding-heart text-emerald-400"></i> 教育經歷與無償家教計畫
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                        分享我從 5C 吊車尾到自學考上北科大的故事，以及我為何提供經濟困難學生無條件的家教輔導。如果你或身邊的人需要這份力量，歡迎來看看。
+                    </p>
+                </div>
+                
+                <div class="relative z-10 md:w-auto w-full text-center shrink-0">
+                    <a href="https://t112340230-max.github.io/education/" target="_blank" class="inline-flex items-center justify-center gap-2 w-full md:w-auto bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg shadow-emerald-500/30">
+                        了解詳情 <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
